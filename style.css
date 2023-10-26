@@ -1,0 +1,140 @@
+body {
+    text-align: center !important;
+    background-size: auto;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: rgba(235, 229, 240, 0.813);
+    opacity: 0.75 !important;
+    filter: blur(0.75)(opacity=75) !important;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+
+
+
+    .nav-link:hover {
+        background-color: white;
+        opacity: 1.00 !important;
+        filter: blur(0)(opacity=100) !important;
+        border-radius: 5px;
+    }
+}
+
+canvas {
+    box-shadow: 10px 10px 10px rgba(106, 56, 138, 0.363);
+    border-radius: 10px;
+}
+
+/* unvisited link */
+.footer-link:link {
+    color: white;
+  }
+  
+  /* visited link */
+  .footer-link:visited {
+    color: rgb(171, 223, 230);
+  }
+  
+  /* mouse over link */
+  .footer-link:hover {
+    color: whitesmoke;
+  }
+  
+  /* selected link */
+  .footer-link:active {
+    color: rgb(180, 180, 180);
+  }
+
+.footer {
+    top: 92%;
+    bottom: 0%;
+    position: fixed;
+    background-color: rgba(245, 245, 245, 0.221);
+    height: fit-content;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.header {
+    font-family: 'Varela Round', sans-serif !important;
+    font-weight:bold;
+    font-size:2.5rem;
+    letter-spacing: -1%;
+}
+
+.btn-action:hover {
+    background-color: whitesmoke;
+    animation-name: hover;
+    animation-duration: 0.5s;
+    border:none;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+
+@keyframes hover {
+    0%{width: 50%;}
+    50%{width: 55%;}
+}
+
+
+.btn-action {
+    background-color: rgba(235, 229, 240, 0.813);
+    width: 50%;
+    border:none;
+    padding: 5px;
+    border-radius: 20px;
+    font-family: 'Comfortaa', sans-serif !important;
+    font-weight: 500;
+}
+
+.btn-anim {
+ /*enter extra properties in here! {that you want separate from .btn-action! :] */
+    background-color: rgba(235, 229, 240, 0.813);
+    width: 50%;
+    border:none;
+    padding: 5px;
+    border-radius: 20px;
+    font-family: 'Comfortaa', sans-serif !important;
+    font-weight: 500;
+}
+
+.heading-btn {
+    width: auto;
+    text-align: center;
+    border:none;
+    padding: 8px;
+    border-radius: 20px;
+    font-family: 'Comfortaa', sans-serif !important;
+    font-weight: 500;
+}
+
+/*default color: rgba(235, 229, 240, 0.813)*/
+#status {
+    background-color: rgba(233, 210, 221, 0.813);
+    width: auto;
+    text-align: center;
+    border:none;
+    padding: 8px;
+    border-radius: 20px;
+    font-family: 'Comfortaa', sans-serif !important;
+    font-weight: 500;
+}
+
+#info {
+    background-color: rgba(205, 230, 219, 0.605);
+    width: auto;
+    text-align: center;
+    border:none;
+    padding: 8px;
+    border-radius: 35px;
+    font-family: 'Comfortaa', sans-serif !important;
+    font-weight: 500;
+}

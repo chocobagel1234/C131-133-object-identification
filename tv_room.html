@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <!--metadata-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="picure of TV room with rectangles on top detecting the large objects">
+        <meta name="keywords" content="C131, object-detection, TV room example">
+        <meta name="author" content="Mahdiya Alam">
+        <meta name="type" content="BYJU's Project">
+
+        <!--insert favicon here-->
+        <link rel="icon" type="image/x-icon" href="/object-recognition-favicon.svg">
+
+        <!--Bootstrap-->
+            <!--Bootstrap CSS-->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+            <!--Bootstrap Icons (latest ver!)-->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+            <!--Bootstrap JS-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+            <!--Google fonts - Catamaran, DM Serif Display, Manrope, Open Sans, Space Grotesk, Varela Round and Comfortaa-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Comfortaa:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&family=Manrope:wght@200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Space+Grotesk:wght@300;400;500;600;700&family=Varela+Round&display=swap" rel="stylesheet">
+
+        <!--Other_frameworks-->
+            <!--p5.js-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js" integrity="sha512-bcfltY+lNLlNxz38yBBm/HLaUB1gTV6I0e+fahbF9pS6roIdzUytozWdnFV8ZnM6cSAG5EbmO0ag0a/fLZSG4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+            <!--ml5.js-->
+            <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <script src="sketch.js"></script>
+    </head>
+
+    <body background="bg-img.jpg">
+        <!--Navbar (code taken from Bootstrap docs)-->
+        <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary bg-blur">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="home.html"><strong>Object Detection</strong></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="tv_room.html">TV</a>
+
+                  <a class="nav-link" href="home.html">Home</a>
+
+                  <a class="nav-link" 
+                  href="bedroom.html">Bedroom</a>
+
+                  <a class="nav-link" 
+                  href="desk.html">Desk</a>
+
+                  <a class="nav-link"
+                  href="bottles.html">Bottles</a>
+
+                  <a class="nav-link"
+                  href="fruit_basket.html">Fruit Basket</a>
+                </div>
+              </div>
+            </div>
+        </nav>
+<br>
+        <div class="container-fluid text-center">
+            <h6 id="status" class="heading-btn">Status: Objects Detected</h6>
+
+            <h6 id="info" class="heading-btn">There are 6 large objects in the room, and the model has detected 2 of them.</h6>
+        </div>
+
+        <!--Footer-->
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 footer text-center">
+          <p id="footer_text" class="text-sm">TV Image by <a class="footer-link" href="https://www.pexels.com/photo/interior-of-modern-living-room-at-home-6186813/"target="_blank">Max Rahubovskiy</a> on <a class="footer-link" href="https://www.pexels.com/" target="_blank">Pexels</a> </p>
+          </div> 
+    </body>
+</html>
+<!--Credits go to "Photo by Max Rahubovskiy: https://www.pexels.com/photo/interior-of-modern-living-room-at-home-6186813/" <- Footer text-->
