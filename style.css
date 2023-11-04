@@ -9,14 +9,47 @@ body {
     scroll-behavior: smooth;
 }
 
+/*Code generated with CSS scrollbar generator -> https://www.cssportal.com/css-scrollbar-generator/ <- link!*/
+
+    /* Chrome, Edge and Safari */
+    *::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+    }
+    *::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #F1E5E7;
+    }
+
+    *::-webkit-scrollbar-track:hover {
+    background-color: #F1E5E7;
+    }
+
+    *::-webkit-scrollbar-track:active {
+    background-color: #F1E5E7;
+    }
+
+    *::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #F1B9BF;
+    }
+
+    *::-webkit-scrollbar-thumb:hover {
+    background-color: #DDAAAF;
+    }
+
+    *::-webkit-scrollbar-thumb:active {
+    background-color: #D1A6B7;
+    }
+
+
 nav {
     background-color: rgba(235, 229, 240, 0.813);
     opacity: 0.75 !important;
     filter: blur(0.75)(opacity=75) !important;
     font-family: 'Varela Round', sans-serif;
     display: flex;
-
-
+    line-height: 1.5rem;
 
     .nav-link:hover {
         background-color: white;
@@ -24,6 +57,7 @@ nav {
         filter: blur(0)(opacity=100) !important;
         border-radius: 5px;
     }
+
 }
 
 canvas {
